@@ -8,6 +8,7 @@ Static website for [FTU Labs](https://ftulabs.github.io), hosted on GitHub Pages
 
 - [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
+- [K65 Members](#k65-members)
 - [Contributing Guide](#contributing-guide)
   - [1. Clone the Repo](#1-clone-the-repo)
   - [2. Create a Branch](#2-create-a-branch)
@@ -112,6 +113,16 @@ ftulabs.github.io/
 ```
 
 ---
+
+## K65 Members
+
+Students of the K65 cohort introduce themselves at [`/k65-members`](https://ftulabs.github.io/k65-members.html) with one pull request each:
+
+1. Fork this repo and create a branch: `git switch -c feature/k65-<username>`
+2. Copy `k65/members/_template.json` to `k65/members/<your-github-username>.json` and fill it in. Only add your own file, so pull requests never conflict.
+3. Commit exactly once: `git commit -m "feature: Add K65 member <Your Name>"`, push, and open a pull request.
+
+The `K65 Members` workflow validates your file on the PR, and rebuilds `k65/members.json` after merge.
 
 ## Contributing Guide
 

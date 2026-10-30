@@ -5,6 +5,26 @@ if ("serviceWorker" in navigator) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // --- K65 announcement banner (dismissible) ---
+  const BANNER_KEY = "ftu-k65-banner-closed";
+  if (!localStorage.getItem(BANNER_KEY) && !location.pathname.startsWith("/k65-members")) {
+    const bar = document.createElement("div");
+    bar.className = "announce";
+    bar.innerHTML =
+      '<div class="announce-inner">' +
+      '<div class="announce-text"><strong>Sinh hoạt công dân K65 đang diễn ra!</strong>' +
+      '<span>Hãy giới thiệu bản thân <a href="/k65-members.html">tại đây</a>.</span></div>' +
+      '<a class="announce-btn" href="/k65-members.html">Tham gia &rsaquo;</a>' +
+      '<button class="announce-close" aria-label="Đóng thông báo">&times;</button>' +
+      "</div>";
+    const nav = document.querySelector(".nav");
+    (nav ? nav.parentNode : document.body).insertBefore(bar, nav ? nav.nextSibling : document.body.firstChild);
+    bar.querySelector(".announce-close").addEventListener("click", () => {
+      bar.remove();
+      localStorage.setItem(BANNER_KEY, "1");
+    });
+  }
+
   // --- Theme toggle ---
   const saved = localStorage.getItem("ftu-theme");
   if (saved) {
