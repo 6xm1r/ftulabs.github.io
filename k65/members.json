@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "name": "Trần Trung Nhân",
+    "github": "nhansp",
+    "role": "K63, FTDS",
+    "bio": "Sinh viên K63 Khoa học máy tính",
+    "links": {
+      "Website": "https://nhansp.id.vn"
+    }
+  }
+]
