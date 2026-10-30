@@ -1471,3 +1471,97 @@ ol {
     word-break: break-all;
 }
 
+
+/* --- K65 announcement + members page --- */
+.announce {
+    position: relative;
+    margin-top: var(--nav-h);
+    background: var(--accent-bg);
+    border-bottom: 1px solid var(--accent-border);
+}
+
+.announce + .page,
+.announce ~ main.page {
+    padding-top: 2.5rem;
+}
+
+.announce-inner {
+    max-width: var(--max-w-wide);
+    margin: 0 auto;
+    padding: 0.875rem 3.5rem 0.875rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.announce-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    flex: 1;
+    min-width: 14rem;
+}
+
+.announce-text strong {
+    color: var(--text-heading);
+    font-size: 0.9375rem;
+}
+
+.announce-text span {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+}
+
+.announce-text a {
+    color: var(--accent);
+}
+
+.announce-btn {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 0.375rem 0.875rem;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.announce-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.announce-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.announce-close:hover {
+    color: var(--text-heading);
+}
+
+.k65-steps {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.9;
+}
+
+.k65-steps code {
+    color: var(--text-heading);
+}
+
+.k65-empty {
+    grid-column: 1 / -1;
+    padding: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K65 — FTU Labs</title>
+  <meta name="description" content="Sinh hoạt công dân K65: các bạn K65 tự giới thiệu bản thân bằng một pull request.">
+  <link rel="icon" href="/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=db84f135">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="/img/logo.png" alt="FTU">FTU Labs</a>
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="projects.html">projects</a>
+          <a href="team.html">team</a>
+          <a href="research.html">research</a>
+          <a href="blog.html">blog</a>
+          <a href="course.html">course</a>
+          <a href="hall.html">hall of fame</a>
+        </div>
+        <div class="lang-switch" aria-label="Language"></div>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <a href="projects.html">projects</a>
+    <a href="team.html">team</a>
+    <a href="research.html">research</a>
+    <a href="blog.html">blog</a>
+    <a href="course.html">course</a>
+    <a href="hall.html">hall of fame</a>
+  </div>
+
+  <main class="page">
+    <div class="container">
+
+      <div class="page-header animate">
+        <h1 class="page-title">K65</h1>
+        <p class="page-desc">Sinh hoạt công dân K65. Mỗi bạn tự giới thiệu bản thân bằng một pull request.</p>
+      </div>
+
+      <section class="section">
+        <div class="section-label">cách tham gia</div>
+        <ol class="k65-steps">
+          <li>Fork repo <a href="https://github.com/ftulabs/ftulabs.github.io">ftulabs/ftulabs.github.io</a>, tạo branch <code>feature/k65-&lt;username&gt;</code>.</li>
+          <li>Copy <code>k65/members/_template.json</code> thành <code>k65/members/&lt;github-username&gt;.json</code> rồi điền thông tin của bạn.</li>
+          <li>Commit đúng 1 lần: <code>feature: Add K65 member &lt;Tên Bạn&gt;</code>, push và mở pull request.</li>
+          <li>PR được merge thì thẻ của bạn hiện ở dưới sau khoảng 1 phút.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <div class="section-label">members <span class="k65-count"></span></div>
+        <div class="team-grid" id="k65-grid">
+          <p class="k65-empty">Đang tải…</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 FTU Labs</span>
+      <div class="footer-links">
+        <a href="https://github.com/ftulabs">GitHub</a>
+        <a href="https://twitter.com/ftulabs">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js?v=1b3fe2f3"></script>
+  <script src="/js/k65.js"></script>
+  <script src="/js/l10n.js?v=ce43f0c1"></script>
+</body>
+
+</html>
